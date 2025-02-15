@@ -1,0 +1,11 @@
+.branding_image img {
+  width: 100px;
+  height: 100px;
+}
+.branding_images {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 20px;
+  
+}

@@ -1,0 +1,67 @@
+.video_section {
+  /* background-color: red; */
+  min-height: 100vh;
+  background-image: url(https://img.freepik.com/free-photo/beach-chairs-umbrella-sandy-beach_90220-1521.jpg?t=st=1737398342~exp=1737401942~hmac=3432f37f409117e217810291dca0d4cd0bc00977eb25470aa8e23a753654e3c5&w=900);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.video_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.video_icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 6;
+}
+.video_source {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.close_video {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 90;
+}
+@media (max-width: 448px) {
+  .close_video {
+    top: 10px;
+    right: 10px;
+  }
+}

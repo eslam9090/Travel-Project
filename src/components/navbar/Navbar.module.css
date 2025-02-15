@@ -1,0 +1,41 @@
+.navbar_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1.5em;
+  padding-inline: 6em;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+.navbar_container .navbar_logo h1 {
+  font-size: 1.7em;
+  color: white;
+}
+.navbar_container .navbar_links {
+  display: flex;
+  gap: 2em;
+  border-bottom: 1px solid white;
+  padding-block-end: 1.5em;
+}
+.navbar_container .navbar_links li a {
+  font-size: 1.1em;
+  cursor: pointer;
+}
+.navbar_toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar_container .navbar_links {
+    display: none !important;
+  }
+  .navbar_toggle {
+    display: block;
+  }
+}
+@media (max-width: 448px) {
+  .navbar_container {
+    padding-inline: 2em;
+  }
+}

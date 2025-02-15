@@ -1,0 +1,14 @@
+.destination_section {
+  padding-block: 5em;
+}
+.destination_cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 40px;
+}
+
+@media (max-width: 448px) {
+  .destination_cards {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}

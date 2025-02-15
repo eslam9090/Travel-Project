@@ -1,0 +1,13 @@
+.branding_container {
+  padding-block: 30px;
+  margin-block: 2em;
+  overflow: hidden;
+  min-height: 100px;
+}
+.branding {
+  background-color: #f1f1ff;
+  min-height: 100px;
+  padding-block: 10px;
+  width: 100%;
+  transform: rotate(-2deg);
+}

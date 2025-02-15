@@ -1,0 +1,24 @@
+.destination_image img {
+  width: 100%;
+  height: 300px;
+  /*object-fit: cover;
+  */
+  border-radius: 15px;
+}
+.destination_text h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+.destination_text {
+  overflow: hidden;
+}
+.destination_text p {
+  font-size: 1rem;
+  color: #6c757d;
+  transform: translateY(100px);
+  transition: 0.3s;
+  line-height: 1.7;
+}
+.destination_card:hover .destination_text p {
+  transform: translateY(0);
+}
